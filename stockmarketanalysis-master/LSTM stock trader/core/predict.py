@@ -5,7 +5,7 @@ import pandas as pd
 class DataLoader():
 
     def __init__(self, filename, split, cols):
-        dataframe = pd.read_csv('data/Google.csv', nrows=200)
+        dataframe = pd.read_csv('data/sp500.csv', nrows=200)
         dataframe.interpolate()
         print (cols)
         i_split = int(len(dataframe) * split)

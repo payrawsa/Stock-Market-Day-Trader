@@ -41,7 +41,7 @@ prediction = model.predict(x_test)
 print(len(prediction))
 
 import pandas as pd
-dataframe = pd.read_csv('data/Google.csv', nrows=200)
+dataframe = pd.read_csv('data/sp500.csv', nrows=200)
 account = 10000
 prices=dataframe.get('Close')
 print(len(prices))
