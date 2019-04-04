@@ -47,6 +47,7 @@ prices=dataframe.get('Close')
 print(len(prices))
 shares=0
 for i in range(len(prediction)):
+    print("Day: ", i)
     if prediction[i] < 0:
         if shares!=0:
             account+=shares*prices.iloc[i]
